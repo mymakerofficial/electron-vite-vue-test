@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Calculator from "@renderer/components/Calculator.vue";
+import Calculator from "@renderer/mainWindow/components/Calculator.vue";
 
 console.log('👋 This message is being logged by "App.vue", included via Vite');
 </script>

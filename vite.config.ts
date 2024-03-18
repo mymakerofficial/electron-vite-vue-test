@@ -16,6 +16,8 @@ export default defineConfig({
       '@main': path.resolve(__dirname, 'src', 'main'),
       '@preload': path.resolve(__dirname, 'src', 'preload'),
       '@renderer': path.resolve(__dirname, 'src', 'renderer'),
+      '@mainWindow': path.resolve(__dirname, 'src', 'renderer', 'mainWindow'),
+      '@splashWindow': path.resolve(__dirname, 'src', 'renderer', 'splashWindow'),
     }
   }
 });
