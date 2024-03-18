@@ -8,14 +8,26 @@ This is a sample project to demonstrate a Vite + Vue 3 application running in El
 npm install
 ```
 
-### Start Development Application with Hot-Reload
+### Start Development Application and Webserver with Hot-Reload
 
 ```sh
 npm run start
 ```
 
-### Create Installer for Production
+### Start Development Webserver with Hot-Reload
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production (Electron)
 
 ```sh
 npm run make
+```
+
+### Type-Check, Compile and Minify for Production (Web)
+
+```sh
+npm run build
 ```

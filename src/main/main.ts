@@ -27,20 +27,23 @@ function createWindow() {
 
   const splashWindow = new BrowserWindow({
     width: 300,
-    height: 300,
+    height: 400,
     frame: false,
     alwaysOnTop: true,
+    transparent: true,
   });
 
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
     splashWindow.loadURL(`${MAIN_WINDOW_VITE_DEV_SERVER_URL}/splashWindow.html`);
   } else {
-    splashWindow.loadFile(path.join(__dirname, `../renderer/${SPLASH_WINDOW_VITE_NAME}/splashWindow.html`));
+    splashWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_DEV_SERVER_URL}/splashWindow.html`));
   }
 
   mainWindow.once('ready-to-show', () => {
-    splashWindow.destroy();
-    mainWindow.show();
+    setTimeout(() => { // Simulate a long loading time
+      splashWindow.destroy();
+      mainWindow.show();
+    }, 2000);
   });
 }
 

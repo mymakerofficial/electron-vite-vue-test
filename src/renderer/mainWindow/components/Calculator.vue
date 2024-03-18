@@ -23,6 +23,6 @@ watch([number1, number2], async () => {
   <span>+</span>
   <input type="number" v-model="number2" />
   <h3>Result</h3>
-  <p>renderer process: {{ resDirect }}</p>
-  <p>main process: {{ resMain ?? 'null' }}</p>
+  <p><code>renderer process: {{ resDirect }}</code></p>
+  <p><code>main process: {{ resMain ?? 'null' }}</code></p>
 </template>
